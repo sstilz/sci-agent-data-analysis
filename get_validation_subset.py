@@ -58,6 +58,27 @@ def get_idx_list(seed, num_files):
     print(f"Saved selected indexes to: {output_index_filepath}")
     return data, idx_list
 
+def get_data():
+    input_filepath = os.path.join(os.getcwd(), 'entire_dataset_summaries/csv_data/combined_metrics_with_modality.csv')
+
+    # Load full dataset
+    data = []
+
+    with open(input_filepath, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            image_idx = int(row['image_idx'])
+            dsc = float(row['DSC_metric'])
+            nsd = float(row['NSD_metric'])
+            modality = row['modality']
+            data.append({
+                'image_idx': image_idx,
+                'DSC_metric': dsc,
+                'NSD_metric': nsd,
+                'modality': modality
+            })
+    return data
+
 def summarize_idx_list(data, output_analytics_file, idx_list):
     # Analytics for selected data
     selected_data = [item for item in data if item['image_idx'] in idx_list]
@@ -131,12 +152,14 @@ if __name__ == "__main__":
     seed = args.seed
 
     # To get a validation subset
-    data, idx_list = get_idx_list(seed, num_files)
-    output_analytics_file = f'subset_analytics/summaries/subset_{args.num_files}_analytics_seed_{seed}.txt'
-    summarize_idx_list(data, output_analytics_file, idx_list)
+    # data, idx_list = get_idx_list(seed, num_files)
+    # output_analytics_file = f'subset_analytics/summaries/subset_{args.num_files}_analytics_seed_{seed}.txt'
+    # summarize_idx_list(data, output_analytics_file, idx_list)
 
     # To split validation set into 50-50 validation and test
-    # val_indices, test_indices = split_data()
-    # summarize_idx_list(data,  f'subset_analytics/summaries/SPLIT_VALIDATION_SET_analytics_seed_{seed}.txt', val_indices)
-    # summarize_idx_list(test_indices, f'subset_analytics/summaries/SPLIT_TEST_SET_analytics_seed_{seed}.txt', test_indices)
+    val_indices, test_indices = split_data()
+    data = get_data()
+    summarize_idx_list(data,  f'subset_analytics/summaries/SPLIT_VALIDATION_SET_analytics_seed_{seed}.txt', val_indices)
+    summarize_idx_list(data, f'subset_analytics/summaries/SPLIT_TEST_SET_analytics_seed_{seed}.txt', test_indices)
+
     print("Done!")
