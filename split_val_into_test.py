@@ -28,4 +28,3 @@ def split_data():
     print("Lengths", len(train_indices), len(test_indices))
 
     return train_indices, test_indices
-s
