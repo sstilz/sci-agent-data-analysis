@@ -1,0 +1,71 @@
+
+================
+Batch 1: Files 0 to 1749
+================
+CT: 100.00% (1750 files)
+
+Average DSC metric: 0.94236
+Average NSD metric: 0.801749
+
+================
+Batch 2: Files 1750 to 3499
+================
+CT: 57.54% (1007 files)
+Dermoscopy: 3.77% (66 files)
+Endoscopy: 11.43% (200 files)
+Fundus: 0.57% (10 files)
+MR: 26.69% (467 files)
+
+Average DSC metric: 0.94309
+Average NSD metric: 0.768758
+
+================
+Batch 3: Files 3500 to 5249
+================
+MR: 38.23% (669 files)
+Microscope: 61.77% (1081 files)
+
+Average DSC metric: 0.708518
+Average NSD metric: 0.42405
+
+================
+Batch 4: Files 5250 to 6999
+================
+Microscope: 100.00% (1750 files)
+
+Average DSC metric: 0.616171
+Average NSD metric: 0.230994
+
+================
+Batch 5: Files 7000 to 8749
+================
+Microscope: 100.00% (1750 files)
+
+Average DSC metric: 0.601862
+Average NSD metric: 0.193029
+
+================
+Batch 6: Files 8750 to 10499
+================
+Microscope: 83.43% (1460 files)
+US: 16.57% (290 files)
+
+Average DSC metric: 0.752225
+Average NSD metric: 0.287391
+
+================
+Batch 7: Files 10500 to 12249
+================
+US: 17.71% (310 files)
+X-Ray: 82.29% (1440 files)
+
+Average DSC metric: 0.830273
+Average NSD metric: 0.424308
+
+================
+Batch 8: Files 12250 to 13071
+================
+X-Ray: 100.00% (822 files)
+
+Average DSC metric: 0.802562
+Average NSD metric: 0.375958

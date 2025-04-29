@@ -1,0 +1,45 @@
+=== Overall Metrics ===
+Average DSC: 0.772650
+Average NSD: 0.442704
+
+=== Per-Modality Metrics ===
+Modality: CT
+  Count: 2757 (21.09%)
+  Average DSC: 0.944554
+  Average NSD: 0.811001
+
+Modality: Dermoscopy
+  Count: 66 (0.50%)
+  Average DSC: 0.897364
+  Average NSD: 0.084177
+
+Modality: Endoscopy
+  Count: 200 (1.53%)
+  Average DSC: 0.954044
+  Average NSD: 0.674792
+
+Modality: Fundus
+  Count: 10 (0.08%)
+  Average DSC: 0.858426
+  Average NSD: 0.288958
+
+Modality: MR
+  Count: 1136 (8.69%)
+  Average DSC: 0.934825
+  Average NSD: 0.781873
+
+Modality: Microscope
+  Count: 6041 (46.21%)
+  Average DSC: 0.626500
+  Average NSD: 0.210561
+
+Modality: US
+  Count: 600 (4.59%)
+  Average DSC: 0.956743
+  Average NSD: 0.656114
+
+Modality: X-Ray
+  Count: 2262 (17.30%)
+  Average DSC: 0.803109
+  Average NSD: 0.377459
+

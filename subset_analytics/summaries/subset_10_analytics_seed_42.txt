@@ -1,0 +1,48 @@
+=== Subset Summary ===
+Total samples: 10
+Overall Avg DSC: 0.907963
+Overall Avg NSD: 0.609639
+
+=== Per-Modality Breakdown ===
+Modality: CT
+  Count: 2 (20.00%)
+  Avg DSC: 0.949554
+  Avg NSD: 0.862199
+
+Modality: Dermoscopy
+  Count: 1 (10.00%)
+  Avg DSC: 0.948868
+  Avg NSD: 0.036368
+
+Modality: Endoscopy
+  Count: 1 (10.00%)
+  Avg DSC: 0.969015
+  Avg NSD: 0.544346
+
+Modality: Fundus
+  Count: 1 (10.00%)
+  Avg DSC: 0.973368
+  Avg NSD: 0.478070
+
+Modality: MR
+  Count: 2 (20.00%)
+  Avg DSC: 0.916125
+  Avg NSD: 0.690541
+
+Modality: Microscope
+  Count: 1 (10.00%)
+  Avg DSC: 0.636980
+  Avg NSD: 0.140625
+
+Modality: US
+  Count: 1 (10.00%)
+  Avg DSC: 0.967571
+  Avg NSD: 1.000000
+
+Modality: X-Ray
+  Count: 1 (10.00%)
+  Avg DSC: 0.852466
+  Avg NSD: 0.791506
+
+=== Selected Image Indexes ===
+[644, 2619, 2771, 2829, 3027, 3534, 3812, 5997, 10352, 11229]
