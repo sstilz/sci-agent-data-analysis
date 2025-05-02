@@ -1,0 +1,23 @@
+=== Subset Summary ===
+Total samples: 10
+Overall Avg DSC: 0.774555
+Overall Avg NSD: 0.331252
+
+=== Per-Modality Breakdown ===
+Modality: CT
+  Count: 2 (20.00%)
+  Avg DSC: 0.837434
+  Avg NSD: 0.593233
+
+Modality: Microscope
+  Count: 6 (60.00%)
+  Avg DSC: 0.698248
+  Avg NSD: 0.172122
+
+Modality: US
+  Count: 2 (20.00%)
+  Avg DSC: 0.940597
+  Avg NSD: 0.546660
+
+=== Selected Image Indexes ===
+[6216, 10602, 5157, 10754, 10144, 560, 1759, 9835, 8508, 8415]
